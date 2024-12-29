@@ -5,7 +5,8 @@ This is a Discord bot that enforces a "Kanji Only" rule on specified channels. I
 ## Setup Instructions
 
 1. **Clone the Repository**: Clone this repository to your local machine:
-    ```sh git clone https://github.com/your-username/kanji-only-bot.git
+    ```sh
+    git clone https://github.com/your-username/kanji-only-bot.git
     ```
 
 2. **Navigate to the Project Directory**: 
@@ -13,12 +14,21 @@ This is a Discord bot that enforces a "Kanji Only" rule on specified channels. I
     cd kanji-only-bot
     ```
 
-3. **Install Dependencies**: ```sh npm install ```
+3. **Install Dependencies**:
+   ```sh
+   npm install
+   ```
 
-4. **Create a `.env` File**: Create a `.env` file in the root directory and add your Discord bot token, client ID, and guild ID:
-    ```env DISCORD_TOKEN=your-bot-token-here CLIENT_ID=your-client-id-here GUILD_ID=your-guild-id-here ```
+5. **Create a `.env` File**:
 
-5. **Configure Role and Channel IDs**: Update the following placeholder values in the code with actual IDs:
+   Create a `.env` file in the root directory and add your Discord bot token, client ID, and guild ID:
+    ```env
+    DISCORD_TOKEN=your-bot-token-here
+    CLIENT_ID=your-client-id-here
+    GUILD_ID=your-guild-id-here
+    ```
+
+7. **Configure Role and Channel IDs**: Update the following placeholder values in the code with actual IDs:
 
     - **`index.js`**:
       - Line 15: Replace `'Log channel ID here'` with the actual ID of the channel where logs should be sent.
@@ -32,7 +42,8 @@ This is a Discord bot that enforces a "Kanji Only" rule on specified channels. I
 
 6. **Start the Bot**: 
     ```sh
-    node index.js ```
+    node index.js
+    ```
 
 ## Configuration
 
