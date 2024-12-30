@@ -15,23 +15,23 @@ const client = new Client({
 let logChannelID = 'Log channnel ID here';
 let restrictedRoleID = 'restricted role ID here';
 
-// 新しいログチャンネルIDを設定するための関数
+// Set new log channel ID
 const setLogChannelID = (newID) => {
     logChannelID = newID;
 };
 
-// 現在のログチャンネルIDを取得するための関数
+// Get current log channel ID
 const getLogChannelID = () => logChannelID;
 
-// 新しい制限ロールIDを設定するための関数
+// Set new restraint roll ID
 const setRestrictedRoleID = (newID) => {
     restrictedRoleID = newID;
 };
 
-// 現在の制限ロールIDを取得するための関数
+// Get current restraint roll ID
 const getRestrictedRoleID = () => restrictedRoleID;
 
-// Botが準備完了したときの処理
+// Bot ready
 client.once('ready', async () => {
     await registerCommands(client);
 
